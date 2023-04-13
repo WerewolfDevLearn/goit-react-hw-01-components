@@ -1,13 +1,31 @@
-import ProfileStatistic from "./ProfileStatistic";
-export default function Profile({ user }) {
-  const { name, tag, avatar, stats, location } = user;
+import ProfileStatistic from "./ProfileStatistic/ProfileStatistic";
+import ProfileStyle from "./Profile.module.css";
+interface IStats {
+  followers: number;
+  views: number;
+  likes: number;
+}
+interface IUser {
+  username: string;
+  tag: string;
+  location: string;
+  avatar: string;
+  stats: IStats;
+}
+
+interface ProfileProps {
+  user: IUser;
+}
+
+export default function Profile({ user }: ProfileProps) {
+  const { username, tag, avatar, stats, location } = user;
   return (
-    <div className='profile'>
-      <div className='description'>
-        <img src={avatar} alt='User avatar' className='avatar' />
-        <p className='name'>{name}</p>
-        <p className='tag'>{tag}</p>
-        <p className='location'>{location}</p>
+    <div className={ProfileStyle.profile}>
+      <div className={ProfileStyle.description}>
+        <img src={avatar} alt='User avatar' className={ProfileStyle.avatar} />
+        <p className={ProfileStyle.name}>{username}</p>
+        <p className={ProfileStyle.tag}>@{tag}</p>
+        <p className={ProfileStyle.location}>{location}</p>
       </div>
       <ProfileStatistic stats={stats} />
     </div>
