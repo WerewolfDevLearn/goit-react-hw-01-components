@@ -12,7 +12,7 @@ interface IData {
   stats: IStat[];
 }
 
-export default function Statistics({ title, stats }: IData) {
+export default function Statistics({ title, stats }: IData): JSX.Element {
   return (
     <section className={StatisticsStyles.statistics}>
       {title && <h2 className={StatisticsStyles.title}>{title}</h2>}

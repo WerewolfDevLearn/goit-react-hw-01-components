@@ -12,7 +12,7 @@ interface FriendListProps {
   friends: Friend[];
 }
 
-export default function FriendList({ friends }: FriendListProps) {
+export default function FriendList({ friends }: FriendListProps): JSX.Element {
   return (
     <ul className={FriendListStyle.friendList}>
       {friends.map(friend => (

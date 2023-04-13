@@ -17,7 +17,7 @@ interface ProfileProps {
   user: IUser;
 }
 
-export default function Profile({ user }: ProfileProps) {
+export default function Profile({ user }: ProfileProps): JSX.Element {
   const { username, tag, avatar, stats, location } = user;
   return (
     <div className={ProfileStyle.profile}>

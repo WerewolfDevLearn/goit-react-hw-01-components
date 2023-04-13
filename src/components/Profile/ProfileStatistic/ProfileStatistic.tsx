@@ -11,7 +11,7 @@ interface ProfileProps {
   stats: IStats;
 }
 
-export default function ProfileStatistic({ stats }: ProfileProps) {
+export default function ProfileStatistic({ stats }: ProfileProps): JSX.Element {
   const arrOfStats = arrOfObjects(stats);
   return (
     <ul className={ProfileStyle.stats}>

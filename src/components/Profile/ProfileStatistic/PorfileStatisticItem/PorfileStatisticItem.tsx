@@ -1,5 +1,10 @@
 import ProfileStyle from "../../Profile.module.css";
-export default function ProfileStatisticItem({ label, number }) {
+interface ProfileStatisticItemProps {
+  label: string;
+  number: number;
+}
+
+export default function ProfileStatisticItem({ label, number }: ProfileStatisticItemProps): JSX.Element {
   return (
     <li>
       <span className={ProfileStyle.label}>{label}</span>

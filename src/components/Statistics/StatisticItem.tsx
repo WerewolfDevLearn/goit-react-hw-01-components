@@ -6,7 +6,7 @@ interface IProp {
   percentage: number;
 }
 
-export default function StatisticItem({ label, percentage }: IProp) {
+export default function StatisticItem({ label, percentage }: IProp): JSX.Element {
   return (
     <li className={StatisticsStyles.item} style={{ backgroundColor: colorGenerator() }}>
       <span className={StatisticsStyles.label}>{label}</span>

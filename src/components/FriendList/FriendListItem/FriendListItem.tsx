@@ -6,7 +6,7 @@ interface FriendListItemProp {
   isOnline: boolean;
 }
 
-export default function FriendListItem({ avatar, name, isOnline }: FriendListItemProp) {
+export default function FriendListItem({ avatar, name, isOnline }: FriendListItemProp): JSX.Element {
   const finalStyle = isOnline ? FriendListItemStyle.onLine : FriendListItemStyle.offLine;
 
   return (

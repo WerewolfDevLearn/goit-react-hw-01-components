@@ -1,0 +1,14 @@
+.roll {
+  font-size: 15px;
+  line-height: 30px;
+  color: #5c6975;
+  font-weight: 300;
+}
+
+.roll:nth-child(2n) {
+  background-color: #ecf2f3;
+}
+
+.roll td:first-child::first-letter {
+  text-transform: uppercase;
+}
