@@ -10,7 +10,7 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 export default function App() {
   return (
     <Section>
-      <Profile user={user} />;
+      <Profile user={user} />
       <Statistics title='Upload stats' stats={data} />
       <Statistics stats={data} />
       <FriendList friends={friends} />
