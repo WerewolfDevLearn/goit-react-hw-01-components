@@ -1,6 +1,8 @@
 import style from "./Section.module.css";
-
-function Section({ children }) {
+interface ISectionProp {
+  children: JSX.Element[];
+}
+function Section({ children }: ISectionProp): JSX.Element {
   return <div className={style.container}>{children}</div>;
 }
 
