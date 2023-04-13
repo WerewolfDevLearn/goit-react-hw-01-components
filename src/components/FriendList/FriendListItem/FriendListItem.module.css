@@ -1,0 +1,37 @@
+.item {
+  width: 400px;
+  background-color: #d7eceb;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: pink;
+}
+.avatar {
+  width: 96px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.name {
+  font-size: 30px;
+  margin-left: 18px;
+}
+.onLine {
+  composes: status;
+  background-color: green;
+}
+.offLine {
+  composes: status;
+  background-color: red;
+}

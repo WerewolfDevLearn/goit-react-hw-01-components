@@ -1,5 +1,5 @@
 import StatisticItem from "./StatisticItem";
-import StatisticsStyles from "./Statistic.module.css";
+import StatisticsStyles from "./Statistics.module.css";
 
 interface IStat {
   id: string;

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Neue Helvetica";
+  src: url("../../fonts/Neue-Helvetica/font/HelveticaNeueCyr-Light.woff2") format("woff2"),
+    url("../../fonts/Neue-Helvetica/font/HelveticaNeueCyr-Bold.woff2") format("woff2");
+}
+.transactionHistory {
+  font-family: "Neue Helvetica";
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transactionHistory thead {
+  background-color: #00bcd4;
+  font-size: 13px;
+  line-height: 30px;
+  color: #ffffff;
+}
